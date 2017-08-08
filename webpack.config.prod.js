@@ -12,6 +12,8 @@ module.exports = {
     filename: 'index.js',
     path: distPath,
     publicPath: '',
+    library: '@aglet/components',
+    libraryTarget: 'umd',
   },
 
   module: {
