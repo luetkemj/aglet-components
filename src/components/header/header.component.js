@@ -6,7 +6,7 @@ export default function Header() {
     <div className={style.container}>
       <div className={style.masthead}>
         <div className={style.logo}>
-          <img src="../../assets/images/nib.svg" alt="logo" />
+          <img src="https://s3-us-west-2.amazonaws.com/agletio/images/nib.svg" alt="logo" />
         </div>
         <div className={style.nameplate}>
           <div className={style.name}>AGLET</div>

@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin');
 const path = require('path');
@@ -89,9 +88,5 @@ module.exports = {
     new HtmlWebpackHarddiskPlugin({
       outputPath: distPath,
     }),
-    new CopyWebpackPlugin([{
-      from: `${srcPath}/assets`,
-      to: `${distPath}/assets`,
-    }]),
   ],
 };

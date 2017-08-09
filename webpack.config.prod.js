@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 const srcPath = path.resolve(__dirname, 'src');
@@ -57,10 +56,6 @@ module.exports = {
   },
 
   plugins: [
-    new CopyWebpackPlugin([{
-      from: `${srcPath}/assets`,
-      to: `${distPath}/assets`,
-    }]),
     new webpack.optimize.UglifyJsPlugin({
       mangle: true,
       compress: true,
