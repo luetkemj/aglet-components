@@ -2,6 +2,18 @@
 
 Shared Components for [Aglet.io](http://aglet.io)
 
+## Get Started
+
+**install the package:**
+`yarn add @aglet/components` or `npm install @aglet/components --save`
+
+### Usage
+
+### Header Component
+`<Header />`
+<img width="734" alt="screen shot 2017-08-08 at 7 52 32 pm" src="https://user-images.githubusercontent.com/925980/29100728-31d40ac6-7c73-11e7-88c2-523f923187b7.png">
+
+
 ## Development
 
 This project requires [Node.js](https://nodejs.org/en/). Ensure that you have the latest version installed before continuing.
@@ -16,14 +28,14 @@ Start the server: `npm start`
 
 Navigate to `localhost:3000`
 
-<!-- ### Building
-This project uses babel to transpile all javascript to es5 syntax and webpack to build a dist directory for deployment.
+### Building
+This project uses babel to transpile all javascript to es5 syntax and webpack to build a dist directory for publication.
 
 Build for production: `npm run build`
 
-Running the build script will remove the existing build directory, run all code linting and tests, and run webpack to build an es5 transpiled, uglified, bundle located in the dist directory. -->
-
-<!-- ## Versioning
+Running the build script will remove the existing dist directory, run all linters and tests, and run webpack to build an es5 transpiled, uglified, bundle located in the dist directory.
+<!--
+## Versioning
 
 We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags). -->
 
@@ -52,11 +64,6 @@ This project uses [sass-lint](https://github.com/sasstools/sass-lint). Custom ru
 sass-lint `npm run lint:sass-lint`
 
 eslint and sass-lint: `npm run lint`
-
-<!-- ## Database
-
-Explaining what database (and version) has been used. Provide download links.
-Documents your database design and schemas, relations etc... -->
 
 ## Contributing
 
