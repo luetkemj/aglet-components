@@ -11,7 +11,14 @@ Shared Components for [Aglet.io](http://aglet.io)
 
 ### Header Component
 `<Header />`
+
 <img width="734" alt="screen shot 2017-08-08 at 7 52 32 pm" src="https://user-images.githubusercontent.com/925980/29100728-31d40ac6-7c73-11e7-88c2-523f923187b7.png">
+
+### Footer Component
+`<Footer repo={'#'} />`
+
+<img width="878" alt="screen shot 2017-08-26 at 3 59 12 pm" src="https://user-images.githubusercontent.com/925980/29745064-ac16f89a-8a77-11e7-8cd3-17261bc4ea6c.png">
+
 
 
 ## Development

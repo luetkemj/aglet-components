@@ -1,0 +1,36 @@
+@import '../../theme/swatches';
+@import '../../theme/typography';
+
+.container {
+  background: $swatch02;
+  color: $swatch01;
+
+  a {
+    &:hover {
+      color: $swatch05;
+    }
+
+    &:active {
+      color: $swatch07;
+    }
+  }
+}
+
+.heart {
+  color: $swatch10;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.left {
+  line-height: 1.5;
+}
+
+.right {
+  text-align: right;
+  line-height: 1.5;
+}
