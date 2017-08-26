@@ -1,6 +1,6 @@
 {
   "name": "@aglet/components",
-  "version": "v1.1.0",
+  "version": "v1.2.0",
   "description": "Shared react components for Aglet.io",
   "main": "dist/index.js",
   "author": "luetkemj",
