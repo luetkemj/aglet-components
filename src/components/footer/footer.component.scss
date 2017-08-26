@@ -4,6 +4,7 @@
 .container {
   background: $swatch02;
   color: $swatch01;
+  @include font;
 
   a {
     &:hover {
