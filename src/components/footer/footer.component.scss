@@ -5,6 +5,7 @@
   background: $swatch02;
   color: $swatch01;
   @include font;
+  margin: 0 16px;
 
   a {
     &:hover {
@@ -24,7 +25,14 @@
 .actions {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 16px;
+
+  @media (max-width: 500px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .left {
@@ -34,4 +42,10 @@
 .right {
   text-align: right;
   line-height: 1.5;
+
+  @media (max-width: 500px) {
+    text-align: left;
+    order: -1;
+    margin-bottom: 16px;
+  }
 }
