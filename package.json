@@ -20,16 +20,22 @@
     "lint:sass-lint": "sass-lint -c .sass-lint.yml 'src/**/*.scss' -v -q",
     "lint": "npm run lint:eslint && npm run lint:sass-lint",
     "prepublish": "npm run build",
-    "start": "node_modules/.bin/webpack-dev-server --config ./webpack.config.dev.js",
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
     "test:watch": "jest --watch --coverage",
     "test": "npm run lint && jest --coverage",
-    "webpack": "./node_modules/.bin/webpack --config webpack.config.prod.js"
+    "webpack": "./node_modules/.bin/webpack --config webpack.config.prod.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "15.6.1",
     "react-dom": "15.6.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.2.16",
+    "@storybook/addon-info": "3.2.16",
+    "@storybook/addon-links": "^3.2.16",
+    "@storybook/react": "^3.2.16",
     "babel-cli": "6.24.1",
     "babel-eslint": "7.2.3",
     "babel-loader": "7.1.1",

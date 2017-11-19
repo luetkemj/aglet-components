@@ -20,5 +20,6 @@ export default function Footer({ repo }) {
 }
 
 Footer.propTypes = {
+  /** Value of the range */
   repo: PropTypes.string.isRequired,
 };
