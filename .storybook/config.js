@@ -18,7 +18,7 @@ setOptions({
 setDefaults({
   header: false,
   inline: true, // Displays info inline vs click button to view
-  styles: { // not working due to bug in package...
+  styles: { // not working due to bug in addon-info https://github.com/storybooks/storybook/issues/2358
     header: {
       body: {
         marginBottom: '100px',
