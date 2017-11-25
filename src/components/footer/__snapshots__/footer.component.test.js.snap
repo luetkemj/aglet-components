@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="actions"
+  >
+    <div
+      className="left"
+    >
+      <p>
+        <a
+          href="http://luetkemj.github.io/"
+        >
+          Made with 
+          <span
+            className="heart"
+          >
+            ♥
+          </span>
+           in Austin, Texas
+        </a>
+      </p>
+    </div>
+    <div
+      className="right"
+    >
+      <p
+        className="bug"
+      >
+        <a
+          href="https://github.com/luetkemj/aglet-componentsissues"
+        >
+          Report a bug
+        </a>
+      </p>
+      <p
+        className="feature"
+      >
+        <a
+          href="https://github.com/luetkemj/aglet-componentsissues"
+        >
+          Request a feature
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;
