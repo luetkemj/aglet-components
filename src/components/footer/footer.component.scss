@@ -6,7 +6,8 @@
   background: $swatch02;
   color: $swatch01;
   @include font;
-  margin: 0 16px;
+  margin: 0;
+  padding: 16px;
 
   a {
     &:hover {
@@ -27,7 +28,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 16px;
 
   @media (max-width: 500px) {
     justify-content: flex-start;
