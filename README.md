@@ -31,11 +31,32 @@ Start storybook: `yarn dev` or `npm run dev`
 Navigate to `localhost:6006`
 
 ### Building
+
+This project has two build options.
+
+## To build for publication on npm
+
 This project uses babel to transpile all javascript to es5 syntax and webpack to build a dist directory for publication.
 
 Build for production: `yarn build` or `npm run build`
 
 Running the build script will remove the existing dist directory, run all linters and tests, and run webpack to build an es5 transpiled, uglified, bundle located in the dist directory.
+
+## To build as a static app
+
+This project uses [Storybook](https://storybook.js.org/) for development and documentation.
+
+To build a static app for publication: `yarn build:storybook` or `npm run build:storybook`
+
+This will build the storybook configured in the .storybook directory into a static webpack and place it inside the storybook-static directory.
+
+To test it locally, simply run the following commands:
+
+```
+cd storybook-static
+python -m SimpleHTTPServer
+```
+
 
 ## Tests
 
