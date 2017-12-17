@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Footer basic 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#eee",
+      "backgroundImage": "linear-gradient(#ccc 2px, transparent 2px),
+      linear-gradient(90deg, #ccc 2px, transparent 2px),
+      linear-gradient(#ccc 1px, transparent 1px),
+      linear-gradient(90deg, #ccc 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="actions"
+    >
+      <div
+        className="left"
+      >
+        <p>
+          <a
+            href="http://luetkemj.github.io/"
+          >
+            Made with 
+            <span
+              className="heart"
+            >
+              ♥
+            </span>
+             in Austin, Texas
+          </a>
+        </p>
+      </div>
+      <div
+        className="right"
+      >
+        <p
+          className="bug"
+        >
+          <a
+            href="http://github.comissues"
+          >
+            Report a bug
+          </a>
+        </p>
+        <p
+          className="feature"
+        >
+          <a
+            href="http://github.comissues"
+          >
+            Request a feature
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Header basic 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#eee",
+      "backgroundImage": "linear-gradient(#ccc 2px, transparent 2px),
+      linear-gradient(90deg, #ccc 2px, transparent 2px),
+      linear-gradient(#ccc 1px, transparent 1px),
+      linear-gradient(90deg, #ccc 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="masthead"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="logo"
+          src="https://s3-us-west-2.amazonaws.com/agletio/images/nib.svg"
+        />
+      </div>
+      <div
+        className="nameplate"
+      >
+        <div
+          className="name"
+        >
+          AGLET
+        </div>
+        <div
+          className="description"
+        >
+          Tools for the discerning Game Master
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
