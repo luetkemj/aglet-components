@@ -7,7 +7,7 @@ export default function Field(WrappedComponent) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
       this.state = {
-        value: '',
+        value: this.props.initialValue,
       };
     }
 
@@ -30,6 +30,11 @@ export default function Field(WrappedComponent) {
 
   HOCField.propTypes = {
     onChange: PropTypes.func.isRequired,
+    initialValue: PropTypes.string,
+  };
+
+  HOCField.defaultProps = {
+    initialValue: '',
   };
 
   return HOCField;

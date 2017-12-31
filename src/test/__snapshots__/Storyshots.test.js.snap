@@ -117,6 +117,253 @@ exports[`Storyshots Header basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots InputNumber Basic 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+       
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value="0"
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputNumber Controlled InputNumber 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputNumber Controlled InputNumber with initialValue 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value="10"
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputNumber Label 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value="0"
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputNumber Placeholder 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+       
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder="0"
+      type="number"
+      value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputNumber Required 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value="0"
+    />
+  </label>
+</div>
+`;
+
 exports[`Storyshots InputText Basic 1`] = `
 <div
   style={
@@ -194,6 +441,50 @@ exports[`Storyshots InputText Controlled InputText 1`] = `
       placeholder="enter text here..."
       type="text"
       value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots InputText Controlled InputText with initial Value 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputText"
+  >
+    <p
+      className="label"
+    >
+      Text Input
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputText"
+      onChange={[Function]}
+      placeholder="enter text here..."
+      type="text"
+      value="This is an initial value. It can be changed."
     />
   </label>
 </div>
