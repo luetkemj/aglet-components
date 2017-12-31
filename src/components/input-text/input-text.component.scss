@@ -1,0 +1,32 @@
+@import '../../theme/reset';
+@import '../../theme/swatches';
+@import '../../theme/typography';
+
+.input-text {
+  width: 100%;
+}
+
+.label {
+  @include font;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.input {
+  @include font;
+  color: $swatch01;
+  font-size: 14px;
+  width: 100%;
+  background: $swatch03;
+  padding: 8px;
+  transition: box-shadow 150ms ease;
+
+  &::placeholder {
+    color: $swatch04;
+  }
+
+  &:focus {
+    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+  }
+}
