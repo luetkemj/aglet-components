@@ -52,4 +52,16 @@ storiesOf('InputText', module)
         label="Text Input"
         required
       />
+  )))
+  .add('Controlled InputText with initial Value', withInfo(`
+    A controlled InputText - this component has been wrapped in a Higher Order Component before
+    export to manage state automagically.`)(() => (
+      <ControlledInputText
+        name="inputText"
+        onChange={() => {}}
+        placeholder="enter text here..."
+        label="Text Input"
+        required
+        initialValue="This is an initial value. It can be changed."
+      />
   )));
