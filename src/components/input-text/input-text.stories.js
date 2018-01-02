@@ -6,7 +6,7 @@ import { StoryWrapper } from '../../storybook-decorators/story-wrapper';
 
 import ControlledInputText, { InputText } from './input-text.component';
 
-storiesOf('InputText', module)
+storiesOf('Forms/InputText', module)
   .addDecorator(StoryWrapper)
   .add('Basic', withInfo({
     text: 'Minimum required props',

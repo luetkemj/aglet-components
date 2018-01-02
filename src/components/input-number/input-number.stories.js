@@ -6,7 +6,7 @@ import { StoryWrapper } from '../../storybook-decorators/story-wrapper';
 
 import ControlledInputNumber, { InputNumber } from './input-number.component';
 
-storiesOf('InputNumber', module)
+storiesOf('Forms/InputNumber', module)
   .addDecorator(StoryWrapper)
   .add('Basic', withInfo({
     text: 'Minimum required props',
