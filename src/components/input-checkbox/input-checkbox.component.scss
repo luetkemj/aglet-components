@@ -1,0 +1,82 @@
+@import '../../theme/reset';
+@import '../../theme/swatches';
+@import '../../theme/typography';
+
+.wrapper {
+  width: 100%;
+}
+
+.label {
+  width: 36px;
+  height: 36px;
+}
+
+.labelText {
+  @include font;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.input {
+  @include font;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 36px;
+  height: 36px;
+  background: $swatch03;
+  transition: box-shadow 150ms ease;
+  position: relative;
+
+  &:focus {
+    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background-color: $swatch03;
+    left: 18px;
+    top: 8px;
+    transform: rotate(45deg);
+    transition: background-color 150ms ease;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 4px;
+    background-color: $swatch03;
+    left: 7px;
+    top: 19px;
+    transform: rotate(45deg);
+    transition: background-color 150ms ease;
+    pointer-events: none;
+  }
+
+  &.checked {
+    &::before {
+      background-color: $swatch05;
+    }
+
+    &::after {
+      background-color: $swatch05;
+    }
+  }
+}
