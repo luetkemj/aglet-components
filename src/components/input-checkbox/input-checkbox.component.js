@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Field from '../decorators/field.higher-order-component';
+import FieldCheckbox from '../decorators/field-checkbox.higher-order-component';
 
 import style from './input-checkbox.component.scss';
 
@@ -9,7 +9,7 @@ export function InputCheckbox({
   name,
   required,
   handleChange,
-  value,
+  isChecked,
 }) {
   let isRequired;
   if (required) {
@@ -18,29 +18,11 @@ export function InputCheckbox({
     );
   }
 
-  let checkboxToRender;
   let checkboxClasses;
-  if (value) {
+  if (isChecked) {
     checkboxClasses = `${style.checkbox} ${style.checked}`;
-    checkboxToRender = (
-      <input
-        className={style.input}
-        name={name}
-        type="checkbox"
-        onChange={event => handleChange(event)}
-        checked
-      />
-    );
   } else {
     checkboxClasses = `${style.checkbox}`;
-    checkboxToRender = (
-      <input
-        className={style.input}
-        name={name}
-        type="checkbox"
-        onChange={event => handleChange(event)}
-      />
-    );
   }
 
   return (
@@ -51,7 +33,13 @@ export function InputCheckbox({
       >
         <p className={style.labelText}>{label} {isRequired}</p>
         <div className={checkboxClasses}>
-          {checkboxToRender}
+          <input
+            className={style.input}
+            name={name}
+            type="checkbox"
+            onChange={e => handleChange(e)}
+            defaultChecked={isChecked}
+          />
         </div>
       </label>
     </div>
@@ -59,17 +47,16 @@ export function InputCheckbox({
 }
 
 InputCheckbox.propTypes = {
+  isChecked: PropTypes.bool.isRequired,
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
   required: PropTypes.bool,
   handleChange: PropTypes.func.isRequired,
-  value: PropTypes.bool,
 };
 
 InputCheckbox.defaultProps = {
   label: null,
   required: false,
-  value: false,
 };
 
-export default Field(InputCheckbox);
+export default FieldCheckbox(InputCheckbox);

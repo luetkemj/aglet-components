@@ -58,7 +58,7 @@ storiesOf('Forms/InputText', module)
     export to manage state automagically.`)(() => (
       <ControlledInputText
         name="inputText"
-        onChange={() => {}}
+        onChange={val => console.log(val)}
         placeholder="enter text here..."
         label="Text Input"
         required
