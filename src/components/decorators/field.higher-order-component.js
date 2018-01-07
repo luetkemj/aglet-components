@@ -12,9 +12,14 @@ export default function Field(WrappedComponent) {
     }
 
     handleChange(event) {
-      const { value } = event.target;
-      this.setState({ value });
-      this.props.onChange(value);
+      if (event.target.type === 'checkbox') {
+        this.props.onChange(!this.state.value);
+        this.setState({ value: !this.state.value });
+      } else {
+        const { value } = event.target;
+        this.props.onChange(value);
+        this.setState({ value });
+      }
     }
 
     render() {
@@ -30,7 +35,7 @@ export default function Field(WrappedComponent) {
 
   HOCField.propTypes = {
     onChange: PropTypes.func.isRequired,
-    initialValue: PropTypes.string,
+    initialValue: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   };
 
   HOCField.defaultProps = {

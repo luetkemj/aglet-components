@@ -6,7 +6,7 @@ import { StoryWrapper } from '../../storybook-decorators/story-wrapper';
 
 import ControlledInputText, { InputText } from './input-text.component';
 
-storiesOf('InputText', module)
+storiesOf('Forms/InputText', module)
   .addDecorator(StoryWrapper)
   .add('Basic', withInfo({
     text: 'Minimum required props',
@@ -58,7 +58,7 @@ storiesOf('InputText', module)
     export to manage state automagically.`)(() => (
       <ControlledInputText
         name="inputText"
-        onChange={() => {}}
+        onChange={val => console.log(val)}
         placeholder="enter text here..."
         label="Text Input"
         required
