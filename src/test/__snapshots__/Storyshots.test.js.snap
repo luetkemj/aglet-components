@@ -94,7 +94,58 @@ exports[`Storyshots Forms/InputCheckbox Controlled InputCheckbox 1`] = `
       <p
         className="labelText"
       >
-        Number Input Field
+        Checkbox
+         
+        <span
+          className="required"
+        >
+          *
+        </span>
+      </p>
+      <div
+        className="checkbox"
+      >
+        <input
+          className="input"
+          defaultChecked={false}
+          name="inputCheckbox"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Forms/InputCheckbox Controlled InputCheckbox Default Checked 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <div
+    className="wrapper"
+  >
+    <label
+      className="label"
+      htmlFor="inputCheckbox"
+    >
+      <p
+        className="labelText"
+      >
+        Checkbox
          
         <span
           className="required"

@@ -7,7 +7,7 @@ export default function Field(WrappedComponent) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
       this.state = {
-        checked: props.isChecked,
+        checked: props.defaultChecked,
       };
     }
 
@@ -31,12 +31,12 @@ export default function Field(WrappedComponent) {
 
   HOCFieldCheckbox.propTypes = {
     onChange: PropTypes.func,
-    isChecked: PropTypes.bool,
+    defaultChecked: PropTypes.bool,
   };
 
   HOCFieldCheckbox.defaultProps = {
     onChange: null,
-    isChecked: false,
+    defaultChecked: false,
   };
 
   return HOCFieldCheckbox;

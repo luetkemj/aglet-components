@@ -9,12 +9,19 @@ import ControlledInputCheckbox from './input-checkbox.component';
 storiesOf('Forms/InputCheckbox', module)
   .addDecorator(StoryWrapper)
   .add('Controlled InputCheckbox', withInfo(`
-    A controlled InputCheckbox - this component has been wrapped in a Higher Order Component before
-    export to manage state automagically.`)(() => (
+    Default Checked.`)(() => (
       <ControlledInputCheckbox
         name="inputCheckbox"
-        label="Number Input Field"
+        label="Checkbox"
         required
-        isChecked
+      />
+  )))
+  .add('Controlled InputCheckbox Default Checked', withInfo(`
+    Default Unchecked.`)(() => (
+      <ControlledInputCheckbox
+        name="inputCheckbox"
+        label="Checkbox"
+        required
+        defaultChecked
       />
   )));
