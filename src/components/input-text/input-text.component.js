@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Field from '../decorators/field.higher-order-component';
+import ControlledText from '../decorators/controlled-text.decorator';
 
 import style from './input-text.component.scss';
 
@@ -52,4 +52,4 @@ InputText.defaultProps = {
   value: '',
 };
 
-export default Field(InputText);
+export default ControlledText(InputText);

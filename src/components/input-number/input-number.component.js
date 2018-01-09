@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Field from '../decorators/field.higher-order-component';
+import ControlledNumber from '../decorators/controlled-number.decorator';
 
 import style from './input-number.component.scss';
 
@@ -39,9 +39,9 @@ export function InputNumber({
 InputNumber.propTypes = {
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
+  placeholder: PropTypes.number,
   required: PropTypes.bool,
-  value: PropTypes.string,
+  value: PropTypes.number,
   handleChange: PropTypes.func.isRequired,
 };
 
@@ -49,7 +49,7 @@ InputNumber.defaultProps = {
   label: null,
   placeholder: null,
   required: false,
-  value: '',
+  value: 0,
 };
 
-export default Field(InputNumber);
+export default ControlledNumber(InputNumber);
