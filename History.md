@@ -1,4 +1,12 @@
 
+v2.0.0 / 2018-01-08
+==================
+
+  * breaking change - proptypes in form components have changed
+  * refactor components
+  * refactor decorators
+  * move storyshots to dev-dependencies
+
 v1.3.3 / 2018-01-07
 ==================
 
