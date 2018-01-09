@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default function Field(WrappedComponent) {
-  class HOCFieldCheckbox extends Component {
+export default function ControlledCheckbox(WrappedComponent) {
+  class Decorator extends Component {
     constructor(props) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
@@ -29,15 +29,15 @@ export default function Field(WrappedComponent) {
     }
   }
 
-  HOCFieldCheckbox.propTypes = {
+  Decorator.propTypes = {
     onChange: PropTypes.func,
     defaultChecked: PropTypes.bool,
   };
 
-  HOCFieldCheckbox.defaultProps = {
+  Decorator.defaultProps = {
     onChange: null,
     defaultChecked: false,
   };
 
-  return HOCFieldCheckbox;
+  return Decorator;
 }
