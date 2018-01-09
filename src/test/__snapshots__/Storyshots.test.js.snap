@@ -201,13 +201,13 @@ exports[`Storyshots Forms/InputNumber Basic 1`] = `
       onChange={[Function]}
       placeholder={null}
       type="number"
-      value="0"
+      value={0}
     />
   </label>
 </div>
 `;
 
-exports[`Storyshots Forms/InputNumber Controlled InputNumber 1`] = `
+exports[`Storyshots Forms/InputNumber Controlled 1`] = `
 <div
   style={
     Object {
@@ -245,13 +245,13 @@ exports[`Storyshots Forms/InputNumber Controlled InputNumber 1`] = `
       onChange={[Function]}
       placeholder={null}
       type="number"
-      value=""
+      value={0}
     />
   </label>
 </div>
 `;
 
-exports[`Storyshots Forms/InputNumber Controlled InputNumber with initialValue 1`] = `
+exports[`Storyshots Forms/InputNumber Controlled with initialValue 1`] = `
 <div
   style={
     Object {
@@ -289,7 +289,7 @@ exports[`Storyshots Forms/InputNumber Controlled InputNumber with initialValue 1
       onChange={[Function]}
       placeholder={null}
       type="number"
-      value="10"
+      value={10}
     />
   </label>
 </div>
@@ -328,7 +328,7 @@ exports[`Storyshots Forms/InputNumber Label 1`] = `
       onChange={[Function]}
       placeholder={null}
       type="number"
-      value="0"
+      value={0}
     />
   </label>
 </div>
@@ -364,9 +364,9 @@ exports[`Storyshots Forms/InputNumber Placeholder 1`] = `
       className="input"
       name="inputNumber"
       onChange={[Function]}
-      placeholder="0"
+      placeholder={0}
       type="number"
-      value=""
+      value={0}
     />
   </label>
 </div>
@@ -410,7 +410,139 @@ exports[`Storyshots Forms/InputNumber Required 1`] = `
       onChange={[Function]}
       placeholder={null}
       type="number"
-      value="0"
+      value={0}
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Forms/InputNumber With max value 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value={10}
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Forms/InputNumber With min / max value 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value={10}
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Forms/InputNumber With min value 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "backgroundImage": "linear-gradient(#eee 2px, transparent 2px),
+      linear-gradient(90deg, #eee 2px, transparent 2px),
+      linear-gradient(#eee 1px, transparent 1px),
+      linear-gradient(90deg, #eee 1px, transparent 1px)",
+      "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
+      "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
+      "minHeight": "100vh",
+      "padding": "40px",
+      "width": "100vw",
+    }
+  }
+>
+  <label
+    className="wrapper"
+    htmlFor="inputNumber"
+  >
+    <p
+      className="label"
+    >
+      Number Input Field
+       
+      <span
+        className="required"
+      >
+        *
+      </span>
+    </p>
+    <input
+      className="input"
+      name="inputNumber"
+      onChange={[Function]}
+      placeholder={null}
+      type="number"
+      value={10}
     />
   </label>
 </div>

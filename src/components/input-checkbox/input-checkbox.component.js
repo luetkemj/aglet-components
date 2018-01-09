@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import FieldCheckbox from '../decorators/field-checkbox.higher-order-component';
+import ControlledCheckbox from '../decorators/controlled-checkbox.decorator';
 
 import style from './input-checkbox.component.scss';
 
@@ -59,4 +59,4 @@ InputCheckbox.defaultProps = {
   required: false,
 };
 
-export default FieldCheckbox(InputCheckbox);
+export default ControlledCheckbox(InputCheckbox);

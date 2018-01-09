@@ -9,7 +9,7 @@ import ControlledInputCheckbox from './input-checkbox.component';
 storiesOf('Forms/InputCheckbox', module)
   .addDecorator(StoryWrapper)
   .add('Controlled InputCheckbox', withInfo(`
-    Default Checked.`)(() => (
+    Controlled Checkbox`)(() => (
       <ControlledInputCheckbox
         name="inputCheckbox"
         label="Checkbox"
@@ -17,7 +17,7 @@ storiesOf('Forms/InputCheckbox', module)
       />
   )))
   .add('Controlled InputCheckbox Default Checked', withInfo(`
-    Default Unchecked.`)(() => (
+    Default Checked.`)(() => (
       <ControlledInputCheckbox
         name="inputCheckbox"
         label="Checkbox"

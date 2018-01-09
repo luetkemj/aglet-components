@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export default function Field(WrappedComponent) {
-  class HOCField extends Component {
+export default function controlledText(WrappedComponent) {
+  class Decorator extends Component {
     constructor(props) {
       super(props);
       this.handleChange = this.handleChange.bind(this);
@@ -12,14 +12,9 @@ export default function Field(WrappedComponent) {
     }
 
     handleChange(event) {
-      if (event.target.type === 'checkbox') {
-        this.props.onChange(!this.state.value);
-        this.setState({ value: !this.state.value });
-      } else {
-        const { value } = event.target;
-        this.props.onChange(value);
-        this.setState({ value });
-      }
+      const { value } = event.target;
+      this.props.onChange(value);
+      this.setState({ value });
     }
 
     render() {
@@ -33,14 +28,14 @@ export default function Field(WrappedComponent) {
     }
   }
 
-  HOCField.propTypes = {
+  Decorator.propTypes = {
     onChange: PropTypes.func.isRequired,
-    initialValue: PropTypes.any, // eslint-disable-line react/forbid-prop-types
+    initialValue: PropTypes.string,
   };
 
-  HOCField.defaultProps = {
+  Decorator.defaultProps = {
     initialValue: '',
   };
 
-  return HOCField;
+  return Decorator;
 }
