@@ -4,7 +4,7 @@ const style = {
   wrapper: {
     minHeight: '100vh',
     width: '100vw',
-    padding: '40px',
+    padding: '10px',
     backgroundColor: '#fff',
     backgroundImage: `linear-gradient(#eee 2px, transparent 2px),
       linear-gradient(90deg, #eee 2px, transparent 2px),

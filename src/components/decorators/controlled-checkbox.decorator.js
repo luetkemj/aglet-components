@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+function getDisplayName(WrappedComponent) {
+  return WrappedComponent.displayName || WrappedComponent.name || 'Component';
+}
+
 export default function ControlledCheckbox(WrappedComponent) {
   class Decorator extends Component {
     constructor(props) {
@@ -38,6 +42,8 @@ export default function ControlledCheckbox(WrappedComponent) {
     onChange: null,
     defaultChecked: false,
   };
+
+  Decorator.displayName = getDisplayName(WrappedComponent);
 
   return Decorator;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import { StoryWrapper } from '../../storybook-decorators/story-wrapper';
+import { StoryWrapper } from '../../../.storybook/storybook-decorators/story-wrapper';
 
 import ControlledInputNumber, { InputNumber } from './input-number.component';
 

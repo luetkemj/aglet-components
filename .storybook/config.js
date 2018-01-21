@@ -16,16 +16,11 @@ setOptions({
 // addon-info:
 // https://github.com/storybooks/storybook/tree/master/addons/info
 setDefaults({
-  header: false,
+  header: true,
   inline: true, // Displays info inline vs click button to view
-  styles: { // not working due to bug in addon-info https://github.com/storybooks/storybook/issues/2358
-    header: {
-      body: {
-        marginBottom: '100px',
-      },
-    },
+  styles: {
     infoBody: {
-      marginTop: '0px',
+      marginTop: '20px',
     },
   },
 });
