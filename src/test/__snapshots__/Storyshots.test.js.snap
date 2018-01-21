@@ -12,7 +12,7 @@ exports[`Storyshots Footer basic 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -79,7 +79,7 @@ exports[`Storyshots Forms/InputCheckbox Controlled InputCheckbox 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -130,7 +130,7 @@ exports[`Storyshots Forms/InputCheckbox Controlled InputCheckbox Default Checked
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -181,7 +181,7 @@ exports[`Storyshots Forms/InputNumber Basic 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -219,7 +219,7 @@ exports[`Storyshots Forms/InputNumber Controlled 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -263,7 +263,7 @@ exports[`Storyshots Forms/InputNumber Controlled with initialValue 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -307,7 +307,7 @@ exports[`Storyshots Forms/InputNumber Label 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -346,7 +346,7 @@ exports[`Storyshots Forms/InputNumber Placeholder 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -384,7 +384,7 @@ exports[`Storyshots Forms/InputNumber Required 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -428,7 +428,7 @@ exports[`Storyshots Forms/InputNumber With max value 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -472,7 +472,7 @@ exports[`Storyshots Forms/InputNumber With min / max value 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -516,7 +516,7 @@ exports[`Storyshots Forms/InputNumber With min value 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -560,7 +560,7 @@ exports[`Storyshots Forms/InputText Basic 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -598,7 +598,7 @@ exports[`Storyshots Forms/InputText Controlled InputText 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -642,7 +642,7 @@ exports[`Storyshots Forms/InputText Controlled InputText with initial Value 1`] 
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -686,7 +686,7 @@ exports[`Storyshots Forms/InputText Label 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -725,7 +725,7 @@ exports[`Storyshots Forms/InputText Placeholder 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -763,7 +763,7 @@ exports[`Storyshots Forms/InputText Required 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
@@ -807,7 +807,7 @@ exports[`Storyshots Header basic 1`] = `
       "backgroundPosition": "-2px -2px, -2px -2px, -1px -1px, -1px -1px",
       "backgroundSize": "100px 100px, 100px 100px, 10px 10px, 10px 10px",
       "minHeight": "100vh",
-      "padding": "0px",
+      "padding": "10px",
       "width": "100vw",
     }
   }
