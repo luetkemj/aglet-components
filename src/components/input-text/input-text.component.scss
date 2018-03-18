@@ -29,4 +29,8 @@
   &:focus {
     box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
   }
+
+  &[readonly] {
+    box-shadow: none;
+  }
 }
