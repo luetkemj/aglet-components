@@ -23,8 +23,6 @@
     "prepublish": "npm run build",
     "reinstall": "npm run clean && yarn",
     "storybook": "start-storybook -p 6006",
-    "test:watch": "jest --watch --coverage",
-    "test": "npm run lint && jest --coverage",
     "webpack": "./node_modules/.bin/webpack --config webpack.config.prod.js"
   },
   "dependencies": {
