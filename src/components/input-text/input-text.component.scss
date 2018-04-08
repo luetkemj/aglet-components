@@ -1,21 +1,33 @@
 @import '../../theme/base';
 
+.wrapper {
+  display: block;
+}
+
 .input-text {
   width: 100%;
 }
 
+.inputMeta {
+  margin-bottom: 8px;
+}
+
 .label {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 9px;
+  @include typeset(h4);
+}
+
+.instructions {
+  @include typeset(small);
+  color: $swatch04;
 }
 
 .input {
-  color: $swatch01;
-  font-size: 14px;
+  height: 48px;
   width: 100%;
   background: $swatch03;
-  padding: 8px;
+  border: 1px solid $swatch03;
+  padding: 0 8px;
+  @include typeset;
   transition: box-shadow 150ms ease;
 
   &::placeholder {
@@ -23,10 +35,25 @@
   }
 
   &:focus {
-    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+    @include boxShadow;
   }
 
   &[readonly] {
     box-shadow: none;
   }
+
+  &.hasError {
+    border: 1px solid $swatch08;
+  }
+}
+
+.errorMessage {
+  background: $swatch08;
+  @include typeset(helper);
+  color: $swatch02;
+  padding: 4px 8px;
+}
+
+.disabled {
+  opacity: 0.5;
 }
