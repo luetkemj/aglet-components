@@ -1,6 +1,6 @@
 # Aglet Components
 
-Shared Components for [Aglet.io](http://aglet.io)
+Shared Components for [Aglet.io](http://aglet.io) based on the [Aglet Pattern Library](https://sketch.cloud/s/Gol9b).
 
 ## Get Started
 
@@ -57,16 +57,7 @@ cd storybook-static
 python -m SimpleHTTPServer
 ```
 
-
-## Tests
-
-This project uses jest for unit tests, code coverage reports, and component snap shots.
-
-To run tests in watch mode: `npm run test:watch`
-
-To run lint all code and run all tests: `npm run test`
-
-## Style guide
+## Code Style
 
 This project uses [eslint-airbnb](https://www.npmjs.com/package/eslint-config-airbnb). Custom rules can be found in the [.eslintrc](https://github.com/luetkemj/aglet-components/blob/master/.eslintrc) file included in this project.
 
