@@ -19,9 +19,8 @@
 }
 
 .nameplate {
-  line-height: 1.1;
   position: relative;
-  top: 3px;
+  top: 6px;
 }
 
 .name {
@@ -32,4 +31,5 @@
 .description {
   @include typeset(small);
   color: $swatch02;
+  position: relative;
 }
