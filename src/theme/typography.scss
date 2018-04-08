@@ -1,33 +1,184 @@
-$serif: 'Crimson Text';
-$sans-serif: 'Lato';
+@import './swatches';
 
-$very-small: 12px;
-$small: 14px;
-$medium: 16px;
-$medium-medium: 18px;
-$medium-large: 20px;
-$large: 36px;
+// font family
+$sansSerif: 'Lato';
 
+// font weight
 $light: 300;
 $normal: 400;
-$bold: 600;
+$bold: 700;
 
-@mixin fontsmoothing {
-  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
-  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+@mixin defaultTypeSetting {
+  color: $swatch01;
+  font-family: $sansSerif;
+  font-weight: $normal;
+  @include fontsmoothing;
 }
 
-@mixin font ($options: ()) {
-  // setup defaults
-  $config: map-merge((
-      font-family: $sans-serif,
-      font-size: $medium,
-      font-weight: $normal,
-  ), $options);
+// fixes the nasty light text on dark background antialiasing bug
+// Non-standard. https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
+@mixin fontsmoothing($value: antialiased) {
+  -webkit-font-smoothing: $value; // sass-lint:disable-line no-vendor-prefixes
+}
 
-  // the styles we output
-  font-family: map-get($config, font-family);
-  font-size: map-get($config, font-size);
-  font-weight: map-get($config, font-weight);
-  @include fontsmoothing;
+@mixin fontSize($size: 1) {
+  @if $size == 0 {
+    font-size: 12px;
+  }
+  @if $size == 1 {
+    font-size: 16px;
+  }
+  @if $size == 2 {
+    font-size: 18px;
+  }
+  @if $size == 3 {
+    font-size: 20px;
+  }
+  @if $size == 4 {
+    font-size: 24px;
+  }
+  @if $size == 5 {
+    font-size: 36px;
+  }
+}
+
+@mixin lineHeight($lh: 1) {
+  @if $lh == 0 {
+    line-height: 15px;
+  }
+  @if $lh == 1 {
+    line-height: 19px;
+  }
+  @if $lh == 2 {
+    line-height: 22px;
+  }
+  @if $lh == 3 {
+    line-height: 24px;
+  }
+  @if $lh == 4 {
+    line-height: 29px;
+  }
+  @if $lh == 5 {
+    line-height: 44px;
+  }
+}
+
+@mixin typeset($style: regular) {
+  // ////////
+  // HEADINGS
+  // ////////
+  @if $style == h1 {
+    @include defaultTypeSetting;
+    @include fontSize(5);
+    @include lineHeight(5);
+    font-weight: $bold;
+  }
+
+  @if $style == h2 {
+    @include defaultTypeSetting;
+    @include fontSize(4);
+    @include lineHeight(4);
+    font-weight: $bold;
+  }
+
+  @if $style == h3 {
+    @include defaultTypeSetting;
+    @include fontSize(3);
+    @include lineHeight(3);
+    font-weight: $bold;
+  }
+
+  @if $style == h4 {
+    @include defaultTypeSetting;
+    @include fontSize(2);
+    @include lineHeight(2);
+    font-weight: $bold;
+  }
+
+  @if $style == h5 {
+    @include defaultTypeSetting;
+    @include fontSize(1);
+    @include lineHeight(1);
+    font-weight: $bold;
+  }
+
+  @if $style == h6 {
+    @include defaultTypeSetting;
+    @include fontSize(0);
+    @include lineHeight(0);
+    font-weight: $bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+
+  // //////////////
+  // LIGHT HEADINGS
+  // //////////////
+  @if $style == h1lt {
+    @include defaultTypeSetting;
+    @include fontSize(5);
+    @include lineHeight(5);
+    font-weight: $light;
+  }
+
+  @if $style == h2lt {
+    @include defaultTypeSetting;
+    @include fontSize(4);
+    @include lineHeight(4);
+    font-weight: $light;
+  }
+
+  @if $style == h3lt {
+    @include defaultTypeSetting;
+    @include fontSize(3);
+    @include lineHeight(3);
+    font-weight: $light;
+  }
+
+  @if $style == h4lt {
+    @include defaultTypeSetting;
+    @include fontSize(2);
+    @include lineHeight(2);
+    font-weight: $light;
+  }
+
+  @if $style == h5lt {
+    @include defaultTypeSetting;
+    @include fontSize(1);
+    @include lineHeight(1);
+    font-weight: $light;
+  }
+
+  @if $style == h6lt {
+    @include defaultTypeSetting;
+    @include fontSize(0);
+    @include lineHeight(0);
+    font-weight: $light;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  // ///////
+  // CONTENT
+  // ///////
+  @if $style == regular {
+    @include defaultTypeSetting;
+    @include fontSize(1);
+    @include lineHeight(1);
+  }
+
+  @if $style == small {
+    @include defaultTypeSetting;
+    @include fontSize(0);
+    @include lineHeight(0);
+  }
+
+  @if $style == helper {
+    @include defaultTypeSetting;
+    @include fontSize(0);
+    @include lineHeight(0);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 }

@@ -1,6 +1,4 @@
-@import '../../theme/reset';
-@import '../../theme/swatches';
-@import '../../theme/typography';
+@import '../../theme/base';
 
 .wrapper {
   width: 100%;
@@ -12,14 +10,12 @@
 }
 
 .labelText {
-  @include font;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 9px;
 }
 
 .input {
-  @include font;
   padding: 0;
   margin: 0;
   opacity: 0;

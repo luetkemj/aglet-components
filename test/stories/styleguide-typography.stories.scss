@@ -1,0 +1,71 @@
+@import '../../src/theme/base';
+
+.group {
+  margin-bottom: 24px;
+}
+
+.typeset {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.regular {
+  @include typeset;
+}
+
+.small {
+  @include typeset(small);
+}
+
+.helper {
+  @include typeset(helper);
+}
+
+.h1 {
+  @include typeset(h1);
+}
+
+.h2 {
+  @include typeset(h2);
+}
+
+.h3 {
+  @include typeset(h3);
+}
+
+.h4 {
+  @include typeset(h4);
+}
+
+.h5 {
+  @include typeset(h5);
+}
+
+.h6 {
+  @include typeset(h6);
+}
+
+
+.h1lt {
+  @include typeset(h1lt);
+}
+
+.h2lt {
+  @include typeset(h2lt);
+}
+
+.h3lt {
+  @include typeset(h3lt);
+}
+
+.h4lt {
+  @include typeset(h4lt);
+}
+
+.h5lt {
+  @include typeset(h5lt);
+}
+
+.h6lt {
+  @include typeset(h6lt);
+}

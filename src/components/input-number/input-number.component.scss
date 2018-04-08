@@ -1,20 +1,16 @@
-@import '../../theme/reset';
-@import '../../theme/swatches';
-@import '../../theme/typography';
+@import '../../theme/base';
 
 .input-text {
   width: 100%;
 }
 
 .label {
-  @include font;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 9px;
 }
 
 .input {
-  @include font;
   color: $swatch01;
   font-size: 14px;
   width: 100%;

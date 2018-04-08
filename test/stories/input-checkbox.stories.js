@@ -2,12 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import { StoryWrapper } from '../../../.storybook/storybook-decorators/story-wrapper';
-
-import ControlledInputCheckbox from './input-checkbox.component';
+import ControlledInputCheckbox from '../../src/components/input-checkbox/input-checkbox.component';
 
 storiesOf('Forms/InputCheckbox', module)
-  .addDecorator(StoryWrapper)
   .add('Controlled InputCheckbox', withInfo(`
     Controlled Checkbox`)(() => (
       <ControlledInputCheckbox

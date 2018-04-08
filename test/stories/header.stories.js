@@ -2,9 +2,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
-import { StoryWrapper } from '../../../.storybook/storybook-decorators/story-wrapper';
+import { StoryWrapper } from '../../.storybook/storybook-decorators/story-wrapper';
 
-import Header from './header.component';
+import Header from '../../src/components/header/header.component';
 
 const basicInfo = 'Includes layout stying - no container layout required.';
 

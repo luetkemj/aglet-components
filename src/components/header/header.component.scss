@@ -1,6 +1,4 @@
-@import '../../theme/reset';
-@import '../../theme/swatches';
-@import '../../theme/typography';
+@import '../../theme/base';
 
 .container {
   background: $swatch01;
@@ -23,19 +21,15 @@
 .nameplate {
   line-height: 1.1;
   position: relative;
-  top: 7px;
+  top: 3px;
 }
 
 .name {
-  @include font((
-      font-size: $medium-medium,
-      font-weight: 900,
-  ));
+  @include typeset(h4);
+  color: $swatch02;
 }
 
 .description {
-  @include font((
-      font-size: $small,
-      font-weight: 300,
-  ));
+  @include typeset(small);
+  color: $swatch02;
 }

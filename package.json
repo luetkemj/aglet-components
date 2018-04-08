@@ -22,20 +22,21 @@
     "lint": "npm run lint:eslint && npm run lint:sass-lint",
     "prepublish": "npm run build",
     "reinstall": "npm run clean && yarn",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "./node_modules/.bin/start-storybook -p 6006",
     "webpack": "./node_modules/.bin/webpack --config webpack.config.prod.js"
   },
   "dependencies": {
+    "normalize.css": "8.0.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
     "recompose": "0.26.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "3.3.15",
-    "@storybook/addon-info": "3.3.15",
-    "@storybook/addon-knobs": "3.3.15",
-    "@storybook/addon-options": "3.3.15",
-    "@storybook/react": "3.3.15",
+    "@storybook/addon-actions": "3.4",
+    "@storybook/addon-info": "3.4",
+    "@storybook/addon-knobs": "3.4",
+    "@storybook/addon-options": "3.4",
+    "@storybook/react": "3.4",
     "babel-cli": "6.26.0",
     "babel-eslint": "8.2.1",
     "babel-loader": "7.1.2",

@@ -17,8 +17,13 @@ const enhance = compose(
 
 const InputText = enhance(({
   className,
+  disabled,
+  error,
+  errorMessage,
+  instructions,
   label,
   name,
+  onBlur,
   onChange,
   password,
   placeholder,
@@ -26,27 +31,40 @@ const InputText = enhance(({
   required,
   value,
 }) => {
-  let isRequired;
-  if (required) {
-    isRequired = (
-      <span className={style.required}>*</span>
+  let wrapperClasses = `${style.wrapper} ${className}`;
+  if (disabled) wrapperClasses += ` ${style.disabled}`;
+
+  let inputClasses = `${style.input}`;
+  if (error || errorMessage) inputClasses += ` ${style.hasError}`;
+
+  let inputMetaToRender;
+  if (label || required || instructions) {
+    inputMetaToRender = (
+      <div className={style.inputMeta}>
+        {(label || required) && <p className={style.label}>{label} {required && '*'}</p>}
+        {instructions && <p className={style.instructions}>{instructions}</p>}
+      </div>
     );
   }
+
   return (
     <label
-      className={`${style.wrapper} ${className}`}
+      className={wrapperClasses}
       htmlFor={name}
     >
-      <p className={style.label}>{label} {isRequired}</p>
+      {inputMetaToRender}
       <input
-        className={style.input}
+        className={inputClasses}
+        disabled={disabled}
         name={name}
-        type={password ? 'password' : 'text'}
-        readOnly={readOnly}
-        value={value}
-        placeholder={placeholder}
+        onBlur={onBlur}
         onChange={onChange}
+        placeholder={placeholder}
+        readOnly={readOnly}
+        type={password ? 'password' : 'text'}
+        value={value}
       />
+      {errorMessage && <p className={style.errorMessage}>{errorMessage}</p>}
     </label>
   );
 });
@@ -54,12 +72,22 @@ const InputText = enhance(({
 InputText.propTypes = {
   /** Optional className hook for container - wraps entire component */
   className: PropTypes.string,
+  /** Boolean to disable input field */
+  disabled: PropTypes.bool,
+  /** Toggles error state without requiring an error message */
+  error: PropTypes.bool,
+  /** The error message to display if error exists */
+  errorMessage: PropTypes.string,
   /** Callback for accessing the internal state that tracks the form value */
   getValue: PropTypes.func,
   /** Label to display above the input field */
   label: PropTypes.string,
+  /** Instructions displayed between label and input field */
+  instructions: PropTypes.string,
   /** Used with the htmlFor attribute. Should be unique to form */
   name: PropTypes.string.isRequired,
+  /** onBlur callback */
+  onBlur: PropTypes.func,
   /** Text to display when no user input exists */
   placeholder: PropTypes.string,
   /** Boolean to toggle password masking */
@@ -74,7 +102,13 @@ InputText.propTypes = {
 
 InputText.defaultProps = {
   className: null,
+  disabled: false,
+  error: false,
+  errorMessage: null,
+  getValue: null,
+  instructions: null,
   label: null,
+  onBlur: null,
   password: false,
   placeholder: null,
   readOnly: false,

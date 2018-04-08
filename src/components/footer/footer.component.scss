@@ -1,39 +1,9 @@
-@import '../../theme/reset';
-@import '../../theme/swatches';
-@import '../../theme/typography';
+@import '../../theme/base';
 
 .container {
   background: $swatch02;
-  color: $swatch01;
-  @include font;
   margin: 0;
   padding: 16px;
-
-  a {
-    &:hover {
-      color: $swatch05;
-    }
-
-    &:active {
-      color: $swatch07;
-    }
-  }
-}
-
-.heart {
-  color: $swatch10;
-}
-
-.actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-
-  @media (max-width: 500px) {
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-  }
 }
 
 .left {
@@ -48,5 +18,33 @@
     text-align: left;
     order: -1;
     margin-bottom: 16px;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  @media (max-width: 500px) {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.heart {
+  color: $swatch10;
+}
+
+.link {
+  @include typeset;
+
+  &:hover {
+    color: $swatch05;
+  }
+
+  &:active {
+    color: $swatch07;
   }
 }
