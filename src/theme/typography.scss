@@ -26,40 +26,28 @@ $bold: 700;
     font-size: 12px;
   }
   @if $size == 1 {
-    font-size: 16px;
+    font-size: 14px;
   }
   @if $size == 2 {
-    font-size: 18px;
+    font-size: 16px;
   }
   @if $size == 3 {
-    font-size: 20px;
+    font-size: 18px;
   }
   @if $size == 4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   @if $size == 5 {
+    font-size: 24px;
+  }
+  @if $size == 6 {
     font-size: 36px;
   }
 }
 
 @mixin lineHeight($lh: 1) {
-  @if $lh == 0 {
-    line-height: 15px;
-  }
   @if $lh == 1 {
-    line-height: 19px;
-  }
-  @if $lh == 2 {
-    line-height: 22px;
-  }
-  @if $lh == 3 {
-    line-height: 24px;
-  }
-  @if $lh == 4 {
-    line-height: 29px;
-  }
-  @if $lh == 5 {
-    line-height: 44px;
+    line-height: 1.2;
   }
 }
 
@@ -70,42 +58,42 @@ $bold: 700;
   @if $style == h1 {
     @include defaultTypeSetting;
     @include fontSize(5);
-    @include lineHeight(5);
+    @include lineHeight;
     font-weight: $bold;
   }
 
   @if $style == h2 {
     @include defaultTypeSetting;
     @include fontSize(4);
-    @include lineHeight(4);
+    @include lineHeight;
     font-weight: $bold;
   }
 
   @if $style == h3 {
     @include defaultTypeSetting;
     @include fontSize(3);
-    @include lineHeight(3);
+    @include lineHeight;
     font-weight: $bold;
   }
 
   @if $style == h4 {
     @include defaultTypeSetting;
     @include fontSize(2);
-    @include lineHeight(2);
+    @include lineHeight;
     font-weight: $bold;
   }
 
   @if $style == h5 {
     @include defaultTypeSetting;
     @include fontSize(1);
-    @include lineHeight(1);
+    @include lineHeight;
     font-weight: $bold;
   }
 
   @if $style == h6 {
     @include defaultTypeSetting;
     @include fontSize(0);
-    @include lineHeight(0);
+    @include lineHeight;
     font-weight: $bold;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -118,42 +106,42 @@ $bold: 700;
   @if $style == h1lt {
     @include defaultTypeSetting;
     @include fontSize(5);
-    @include lineHeight(5);
+    @include lineHeight;
     font-weight: $light;
   }
 
   @if $style == h2lt {
     @include defaultTypeSetting;
     @include fontSize(4);
-    @include lineHeight(4);
+    @include lineHeight;
     font-weight: $light;
   }
 
   @if $style == h3lt {
     @include defaultTypeSetting;
     @include fontSize(3);
-    @include lineHeight(3);
+    @include lineHeight;
     font-weight: $light;
   }
 
   @if $style == h4lt {
     @include defaultTypeSetting;
     @include fontSize(2);
-    @include lineHeight(2);
+    @include lineHeight;
     font-weight: $light;
   }
 
   @if $style == h5lt {
     @include defaultTypeSetting;
     @include fontSize(1);
-    @include lineHeight(1);
+    @include lineHeight;
     font-weight: $light;
   }
 
   @if $style == h6lt {
     @include defaultTypeSetting;
     @include fontSize(0);
-    @include lineHeight(0);
+    @include lineHeight;
     font-weight: $light;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -164,20 +152,20 @@ $bold: 700;
   // ///////
   @if $style == regular {
     @include defaultTypeSetting;
-    @include fontSize(1);
-    @include lineHeight(1);
+    @include fontSize(2);
+    @include lineHeight;
   }
 
   @if $style == small {
     @include defaultTypeSetting;
-    @include fontSize(0);
-    @include lineHeight(0);
+    @include fontSize(1);
+    @include lineHeight;
   }
 
   @if $style == helper {
     @include defaultTypeSetting;
     @include fontSize(0);
-    @include lineHeight(0);
+    @include lineHeight;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
