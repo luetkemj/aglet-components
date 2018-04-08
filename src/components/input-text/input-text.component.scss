@@ -13,12 +13,11 @@
 }
 
 .label {
-  @include typeset(h4);
+  @include formLabel;
 }
 
 .instructions {
-  @include typeset(small);
-  color: $swatch04;
+  @include formInstructions;
 }
 
 .input {

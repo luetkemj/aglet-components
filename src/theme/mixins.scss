@@ -1,3 +1,12 @@
 @mixin boxShadow {
   box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
 }
+
+@mixin formLabel {
+  @include typeset(h4);
+}
+
+@mixin formInstructions {
+  @include typeset(small);
+  color: $swatch04;
+}

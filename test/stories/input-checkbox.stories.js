@@ -1,24 +1,24 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
+import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 
 import ControlledInputCheckbox from '../../src/components/input-checkbox/input-checkbox.component';
 
 storiesOf('Forms/InputCheckbox', module)
-  .add('Controlled InputCheckbox', withInfo(`
-    Controlled Checkbox`)(() => (
+  .addDecorator(withKnobs)
+  .add('InputCheckbox', withInfo(`
+    With Knobs`)(() => (
       <ControlledInputCheckbox
-        name="inputCheckbox"
-        label="Checkbox"
-        required
-      />
-  )))
-  .add('Controlled InputCheckbox Default Checked', withInfo(`
-    Default Checked.`)(() => (
-      <ControlledInputCheckbox
-        name="inputCheckbox"
-        label="Checkbox"
-        required
-        defaultChecked
+        disabled={boolean('disabled', false)}
+        error={boolean('error', false)}
+        getValue={action('getValue')}
+        instructions={text('instructions', 'instructions')}
+        label={text('label', 'label')}
+        name="name"
+        onBlur={action('onBlur')}
+        readOnly={boolean('readOnly', false)}
+        required={boolean('required', true)}
       />
   )));

@@ -1,18 +1,36 @@
 @import '../../theme/base';
 
 .wrapper {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  cursor: pointer;
+
+  &:hover {
+    .checkbox {
+      @include boxShadow;
+    }
+  }
 }
 
-.label {
-  width: 36px;
-  height: 36px;
+.disabled {
+  opacity: 0.5;
+  cursor: auto;
+
+  &:hover {
+    .checkbox {
+      box-shadow: none;
+    }
+  }
 }
 
-.labelText {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 9px;
+.readOnly {
+  cursor: auto;
+
+  &:hover {
+    .checkbox {
+      box-shadow: none;
+    }
+  }
 }
 
 .input {
@@ -21,22 +39,29 @@
   opacity: 0;
   width: 36px;
   height: 36px;
-  cursor: pointer;
+}
+
+.inputMeta {
+  margin-left: 12px;
+}
+
+.label {
+  @include formLabel;
+}
+
+.instructions {
+  @include formInstructions;
 }
 
 .checkbox {
-  width: 36px;
   height: 36px;
   background: $swatch03;
   transition: box-shadow 150ms ease;
   position: relative;
+  grid-column-start: 1;
 
   &:focus {
-    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
-  }
-
-  &:hover {
-    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+    @include boxShadow;
   }
 
   &::before {
