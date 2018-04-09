@@ -4,13 +4,13 @@ import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 
-import ControlledInputCheckbox from '../../src/components/input-checkbox/input-checkbox.component';
+import InputCheckbox from '../../src/components/input-checkbox/input-checkbox.component';
 
 storiesOf('Forms/InputCheckbox', module)
   .addDecorator(withKnobs)
   .add('InputCheckbox', withInfo(`
     With Knobs`)(() => (
-      <ControlledInputCheckbox
+      <InputCheckbox
         disabled={boolean('disabled', false)}
         error={boolean('error', false)}
         getValue={action('getValue')}

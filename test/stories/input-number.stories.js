@@ -1,94 +1,29 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withInfo } from '@storybook/addon-info';
+import { withKnobs, boolean, number, text } from '@storybook/addon-knobs';
 
-import ControlledInputNumber, { InputNumber } from '../../src/components/input-number/input-number.component';
+import InputNumber from '../../src/components/input-number/input-number.component';
 
 storiesOf('Forms/InputNumber', module)
-  .add('Basic', withInfo({
+  .addDecorator(withKnobs)
+  .add('InputNumber', withInfo({
     text: 'Minimum required props',
     propTables: [InputNumber],
   })(() => (
     <InputNumber
-      name="inputNumber"
-      value={0}
-      handleChange={() => {}}
+      disabled={boolean('disabled', false)}
+      getValue={action('getValue')}
+      step={number('step', 0.5)}
+      instructions={text('instructions', 'instructions')}
+      label={text('label', 'label')}
+      max={number('max', 10)}
+      min={number('min', 0)}
+      name="name"
+      onBlur={action('onBlur')}
+      placeholder={text('placeholder', '0')}
+      readOnly={boolean('readOnly', false)}
+      required={boolean('required', true)}
     />
-  )))
-  .add('Placeholder', withInfo('With placeholder')(() => (
-    <InputNumber
-      name="inputNumber"
-      placeholder={0}
-      handleChange={() => {}}
-    />
-  )))
-  .add('Label', withInfo('With Label')(() => (
-    <InputNumber
-      name="inputNumber"
-      value={0}
-      handleChange={() => {}}
-      label="Number Input Field"
-    />
-  )))
-  .add('Required', withInfo('A required InputNumber')(() => (
-    <InputNumber
-      name="inputNumber"
-      value={0}
-      handleChange={() => {}}
-      label="Number Input Field"
-      required
-    />
-  )))
-  .add('Controlled', withInfo(`
-    This number input is controlled`)(() => (
-      <ControlledInputNumber
-        name="inputNumber"
-        onChange={() => {}}
-        label="Number Input Field"
-        required
-      />
-  )))
-  .add('Controlled with initialValue', withInfo(`
-    Controlled with an initial value of 10`)(() => (
-      <ControlledInputNumber
-        name="inputNumber"
-        initialValue={10}
-        onChange={() => {}}
-        label="Number Input Field"
-        required
-      />
-  )))
-  .add('With min value', withInfo(`
-    Min of 0`)(() => (
-      <ControlledInputNumber
-        name="inputNumber"
-        initialValue={10}
-        onChange={() => {}}
-        label="Number Input Field"
-        required
-        min={0}
-      />
-  )))
-  .add('With max value', withInfo(`
-    Max of 10`)(() => (
-      <ControlledInputNumber
-        name="inputNumber"
-        initialValue={10}
-        onChange={() => {}}
-        label="Number Input Field"
-        required
-        max={10}
-      />
-  )))
-  .add('With min / max value', withInfo(`
-    Min of 0, max of 10`)(() => (
-      <ControlledInputNumber
-        name="inputNumber"
-        initialValue={10}
-        onChange={() => {}}
-        label="Number Input Field"
-        required
-        min={0}
-        max={10}
-      />
   )));

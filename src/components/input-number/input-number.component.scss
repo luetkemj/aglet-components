@@ -1,28 +1,106 @@
 @import '../../theme/base';
 
-.input-text {
-  width: 100%;
+.wrapper {
+  cursor: pointer;
+  position: relative;
+  display: block;
+
+  &:hover {
+    .checkbox {
+      @include boxShadow;
+    }
+  }
 }
 
-.label {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 9px;
+.disabled {
+  opacity: 0.5;
+  cursor: auto;
+
+  &:hover {
+    .checkbox {
+      box-shadow: none;
+    }
+  }
+}
+
+.readOnly {
+  cursor: auto;
+
+  &:hover {
+    .checkbox {
+      box-shadow: none;
+    }
+  }
 }
 
 .input {
-  color: $swatch01;
-  font-size: 14px;
-  width: 100%;
+  @include typeset;
   background: $swatch03;
-  padding: 8px;
-  transition: box-shadow 150ms ease;
+  height: 36px;
+  width: 96px;
+  padding-right: 36px;
+  text-align: center;
 
-  &::placeholder {
-    color: $swatch04;
-  }
+  // sass-lint:disable no-vendor-prefixes
+  -moz-appearance: textfield;
 
-  &:focus {
-    box-shadow: 0 2px 4px 0 rgba($swatch01, .2);
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    display: none;
   }
+  // sass-lint:enable no-vendor-prefixes
+}
+
+.spin {
+  width: 36px;
+  height: 36px;
+
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+
+.button {
+  width: 36px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.increment {
+  &::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $swatch05;
+  }
+}
+
+.decrement {
+  &::before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid $swatch05;
+  }
+}
+
+.inputMeta {
+  margin-left: 12px;
+  align-self: center;
+}
+
+.label {
+  @include formLabel;
+}
+
+.instructions {
+  @include formInstructions;
 }
