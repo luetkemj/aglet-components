@@ -1,6 +1,6 @@
 {
   "name": "@aglet/components",
-  "version": "v2.0.0",
+  "version": "v2.0.1",
   "description": "Shared react components for Aglet.io",
   "main": "dist/index.js",
   "author": "luetkemj",
@@ -8,6 +8,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/luetkemj/aglet-components"
+  },
+  "engines": {
+    "node": "8.11.3"
   },
   "scripts": {
     "build": "npm run clean:dist && npm run test && npm run webpack",

@@ -6,11 +6,13 @@ export default function Header() {
     <div className={style.container}>
       <div className={style.masthead}>
         <div className={style.logo}>
-          <img src="https://s3-us-west-2.amazonaws.com/agletio/images/nib.svg" alt="logo" />
+          <img src="http://i.imgur.com/r0acLM9.png" alt="logo" />
         </div>
         <div className={style.nameplate}>
           <div className={style.name}>AGLET</div>
-          <div className={style.description}>Tools for the discerning Game Master</div>
+          <div className={style.description}>
+            Tools for the discerning Game Master
+          </div>
         </div>
       </div>
     </div>
